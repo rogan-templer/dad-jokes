@@ -8,6 +8,14 @@ export function getDadJokes() {
 })
 }
 
+export function searchDadJokes() {
+  return request.get('https://icanhazdadjoke.com/search?=term')
+  .set('Accept', 'application/json')
+  .then(response => {
+    return response.body.results
+  })
+}
+
 
 export function refreshPage () {
   window.location.reload();

@@ -7,3 +7,8 @@ export function getDadJokes() {
       return response.body.joke
 })
 }
+
+
+export function refreshPage () {
+  window.location.reload();
+}

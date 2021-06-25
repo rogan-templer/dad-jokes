@@ -15,9 +15,19 @@ function RandomJoke () {
 
   return (
     <>
-      <h2>{dadJoke}</h2>
-      <button onClick={refreshPage}>New Joke Please!</button>
+    <div>
+      <div>
+        <h1>Jokes to make your dad proud!</h1>
+      </div>
+      <div>
+        <h2>{dadJoke}</h2>
+      </div>
+      <div>
+        <button onClick={refreshPage}>New Joke Please!</button>
+      </div>
+      <br />
       <Link to='/Search'>Search More Jokes</Link>
+      </div>
     </>
   )
 }

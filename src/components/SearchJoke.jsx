@@ -15,10 +15,20 @@ function SearchJoke () {
     return (
       <>
       <div>
-        <h1>Hi</h1>
+        <h1>List of Jokes</h1>
       </div>
       <div>
         <ul>
+        {
+          searchJokeList.map((title) => {
+            const jokes = title.joke
+            return (
+              <li>
+                {jokes}
+              </li>
+            )
+          })
+        }
         </ul>
       </div>
       </>

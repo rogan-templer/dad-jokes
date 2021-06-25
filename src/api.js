@@ -10,7 +10,7 @@ export function getDadJokes() {
 })
 }
 
-export function searchDadJokes() {
+export function listDadJokes() {
   return request.get('https://icanhazdadjoke.com/search?=term')
   .set('Accept', 'application/json')
   .then(response => {

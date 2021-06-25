@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react'
 
-import { searchDadJokes } from '../api'
+import { listDadJokes } from '../api'
 import BackToHome from './BackToHome'
 
 function SearchJoke () {
     const [searchJokeList, setSearchJokeList] = useState([])
 
     useEffect(() => {
-      searchDadJokes()
+      listDadJokes()
       .then(joke => {
         setSearchJokeList(joke)
       })

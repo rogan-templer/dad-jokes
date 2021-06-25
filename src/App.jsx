@@ -1,12 +1,15 @@
+import React from 'react'
+import { Route } from 'react-router-dom'
 import RandomJoke from "./components/RandomJoke";
+import SearchJoke from './components/SearchJoke';
 
 
 function App() {
   return (
     <div>
-      <h1>Jokes pending....</h1>
       <div>
-        <RandomJoke/>
+        <Route exact path='/' component={RandomJoke} />
+        <Route path='/Search' component={SearchJoke} />
       </div>
     </div>
   );

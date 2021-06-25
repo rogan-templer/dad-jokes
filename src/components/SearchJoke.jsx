@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import { searchDadJokes } from '../api'
+import BackToHome from './BackToHome'
 
 function SearchJoke () {
     const [searchJokeList, setSearchJokeList] = useState([])
@@ -30,6 +31,7 @@ function SearchJoke () {
           })
         }
         </ul>
+        <BackToHome />
       </div>
       </>
     )

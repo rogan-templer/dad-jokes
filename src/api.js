@@ -23,7 +23,7 @@ export function nextPage() {
   return request.get('https://icanhazdadjoke.com/search?page')
   .set('Accept', 'application/json')
   .then(response => {
-    console.log('nextpage', response.body.page);
+    console.log('nextpage', response.body.current_page);
     
     return response.body.page
   })

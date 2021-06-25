@@ -23,7 +23,7 @@ function RandomJoke () {
         <h2>{dadJoke}</h2>
       </div>
       <div>
-        <button onClick={refreshPage}>New Joke Please!</button>
+      <button onClick={refreshPage}>New Joke Please!</button>
       </div>
       <br />
       <Link to='/Search'>Search More Jokes</Link>

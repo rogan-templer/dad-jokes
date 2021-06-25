@@ -20,7 +20,7 @@ function SearchJoke () {
         <h1>List of Jokes</h1>
       </div>
       <div>
-        <button>Next Page</button>
+        <button>Next Page >> </button>
       </div>
       <div>
         <ul>

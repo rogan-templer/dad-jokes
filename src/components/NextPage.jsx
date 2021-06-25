@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { nextPage } from '../api'
 
 function NextPage () {
-  const [changePage, setChangePage] = useState('')
+  const [changePage, setChangePage] = useState([])
 
   useEffect(() => {
     nextPage()

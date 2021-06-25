@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { listDadJokes } from '../api'
 import BackToHome from './BackToHome'
 
+
 function SearchJoke () {
     const [searchJokeList, setSearchJokeList] = useState([])
 
@@ -19,12 +20,15 @@ function SearchJoke () {
         <h1>List of Jokes</h1>
       </div>
       <div>
+        <button>Next Page</button>
+      </div>
+      <div>
         <ul>
         {
-          searchJokeList.map((title) => {
+          searchJokeList.map((title, hehehe) => {
             const jokes = title.joke
             return (
-              <li>
+              <li key={hehehe}>
                 {jokes}
               </li>
             )

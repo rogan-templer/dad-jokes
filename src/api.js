@@ -11,7 +11,7 @@ export function getDadJokes() {
 }
 
 export function listDadJokes() {
-  return request.get('https://icanhazdadjoke.com/search?=term')
+  return request.get('https://icanhazdadjoke.com/search')
   .set('Accept', 'application/json')
   .then(response => {
     // console.log('searchDadJokes',response.body.results)

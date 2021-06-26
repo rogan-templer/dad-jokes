@@ -10,7 +10,7 @@ function App() {
     <div>
       <div>
         <Route exact path='/' component={RandomJoke} />
-        <Route path='/Search' component={SearchJoke} />
+        <Route path='/Search/:number' component={SearchJoke} />
         
       </div>
     </div>

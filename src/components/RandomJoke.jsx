@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
 
 import { getDadJokes, refreshPage } from '../api'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 function RandomJoke () {
   const [dadJoke, setDadJoke] = useState('')
+  const { number } = useParams();
 
   useEffect(() => {
     getDadJokes()
@@ -26,7 +27,7 @@ function RandomJoke () {
       <button onClick={refreshPage}>New Joke Please!</button>
       </div>
       <br />
-      <Link to='/Search'>Search More Jokes</Link>
+      <Link to={{ pathname: `/Search/${number}`}}>Search More Jokes</Link>
       </div>
     </>
   )

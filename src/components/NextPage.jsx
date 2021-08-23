@@ -1,22 +1,23 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
-import { nextPage } from '../api'
+import { nextPage } from "../api";
 
-function NextPage () {
-  const [changePage, setChangePage] = useState([])
+function NextPage() {
+  const [changePage, setChangePage] = useState([]);
+  const { number } = useParams();
 
   useEffect(() => {
-    nextPage()
-    .then(change => {
-      setChangePage(change)
-    })
-  }, [])
+    nextPage(number).then((change) => {
+      setChangePage(change);
+    });
+  }, [number]);
 
   return (
     <>
-    <h1>{changePage}</h1>
+      <button>{changePage}</button>
     </>
-  )
+  );
 }
 
-export default NextPage
+export default NextPage;

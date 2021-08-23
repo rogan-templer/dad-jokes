@@ -23,7 +23,7 @@ export function listDadJokes(number) {
 
 export function nextPage(number) {
   return request
-    .get(`https://icanhazdadjoke.com/search?page=${number}/`)
+    .get(`https://icanhazdadjoke.com/search?page=/`)
     .set("Accept", "application/json")
     .then((response) => {
       console.log("nextpage", response.body.current_page);

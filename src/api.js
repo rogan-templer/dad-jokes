@@ -16,6 +16,8 @@ export function listDadJokes(number) {
     .get(`https://icanhazdadjoke.com/search?page=${number}/`)
     .set("Accept", "application/json")
     .then((response) => {
+      console.log("current page", response.body.results);
+
       return response.body.results;
     });
 }

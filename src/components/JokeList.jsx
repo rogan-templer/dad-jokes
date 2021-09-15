@@ -17,6 +17,11 @@ function JokeList() {
     });
   }, [number]);
 
+  const handlePageChange = (selectedObject) => {
+		setcurrentPage(selectedObject.selected);
+		handleFetch();
+
+
   return (
     <>
       <div>

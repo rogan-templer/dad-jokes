@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import ReactPaginate from "react-paginate";
 
 import { listDadJokes } from "../api";
 import BackToHome from "./BackToHome";
 
-
-function SearchJoke() {
+function JokeList() {
   const [jokeList, setJokeList] = useState([]);
+  const [pageCount, setPageCount] = useState(1);
+  const [currentPage, setcurrentPage] = useState(0); 
   const { number } = useParams();
 
   useEffect(() => {
@@ -14,8 +16,6 @@ function SearchJoke() {
       setJokeList(joke);
     });
   }, [number]);
-
-
 
   return (
     <>
@@ -35,4 +35,4 @@ function SearchJoke() {
   );
 }
 
-export default SearchJoke;
+export default JokeList;

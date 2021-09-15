@@ -16,21 +16,20 @@ export function listDadJokes(number) {
     .get(`https://icanhazdadjoke.com/search?page=${number}/`)
     .set("Accept", "application/json")
     .then((response) => {
-      // console.log('searchDadJokes',response.body.results)
       return response.body.results;
     });
 }
 
-export function nextPage(number) {
-  return request
-    .get(`https://icanhazdadjoke.com/search?page=/`)
-    .set("Accept", "application/json")
-    .then((response) => {
-      console.log("nextpage", response.body.current_page);
+// export function nextPage() {
+//   return request
+//     .get(`https://icanhazdadjoke.com/search?page=/`)
+//     .set("Accept", "application/json")
+//     .then((response) => {
+//       console.log("nextpage", response.body.current_page);
 
-      return response.body.page;
-    });
-}
+//       return response.body.page;
+//     });
+// }
 
 export function refreshPage() {
   window.location.reload();

@@ -3,10 +3,10 @@ import { useParams } from "react-router-dom";
 
 import { listDadJokes } from "../api";
 import BackToHome from "./BackToHome";
-import NextPage from "./NextPage";
 
 function SearchJoke() {
   const [searchJokeList, setSearchJokeList] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
   const { number } = useParams();
 
   useEffect(() => {
@@ -20,14 +20,12 @@ function SearchJoke() {
       <div>
         <h1>List of Jokes</h1>
       </div>
-      <div>
-        <NextPage />
-      </div>
+      <div></div>
       <div>
         <ul>
-          {searchJokeList.map((title, hehehe) => {
+          {searchJokeList.map((title) => {
             const jokes = title.joke;
-            return <li key={hehehe}>{jokes}</li>;
+            return <li key={title.id}>{jokes}</li>;
           })}
         </ul>
         <BackToHome />

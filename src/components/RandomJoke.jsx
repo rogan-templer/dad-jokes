@@ -5,7 +5,7 @@ import { Link, useParams } from "react-router-dom";
 
 function RandomJoke() {
   const [dadJoke, setDadJoke] = useState("");
-  const { number } = useParams();
+  const { number } = useParams([]);
 
   useEffect(() => {
     getDadJokes().then((joke) => {
@@ -26,7 +26,7 @@ function RandomJoke() {
           <button onClick={refreshPage}>New Joke Please!</button>
         </div>
         <br />
-        <Link to={{ pathname: `/Search/${number}` }}>Search More Jokes</Link>
+        <Link to={{ pathname: `/Search/${number}` }}>More Jokes...</Link>
       </div>
     </>
   );

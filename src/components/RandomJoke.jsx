@@ -25,9 +25,7 @@ function RandomJoke() {
           <button onClick={refreshPage}>New Joke Please!</button>
         </div>
         <br />
-        <Link to={{ pathname: `/Jokes/search?page=:number` }}>
-          More Jokes...
-        </Link>
+        <Link to={{ pathname: `/Jokes` }}>More Jokes...</Link>
       </div>
     </>
   );

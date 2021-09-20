@@ -6,7 +6,7 @@ import RandomJoke from "./components/RandomJoke";
 function App() {
   return (
     <div>
-      <div>
+      <div className="container">
         <Route exact path="/" component={RandomJoke} />
       </div>
     </div>

@@ -21,7 +21,7 @@ function RandomJoke() {
         <div>
           <h2>{dadJoke}</h2>
         </div>
-        <div>
+        <div className="center">
           <button onClick={refreshPage}>New Joke Please!</button>
         </div>
         <br />

@@ -5,7 +5,7 @@
 }
 
 .joke-container {
-  background-color: #b34e7e;
+  background-color: #0064b3;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
   padding: 50px 20px;
@@ -23,10 +23,12 @@
 
 .heading {
   font-size: 25px;
+  color: #d1cfcd;
 }
 
 .joke {
   font-size: 30px;
+  color: #222c3e;
 }
 
 h1,
@@ -38,15 +40,16 @@ h2 {
 }
 
 button {
-  background-color: #01b3ed;
-  padding: 30px;
+  background-color: #ffaf08;
+  padding: 10px;
   border-radius: 5px;
   font-size: 17px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   font-family: "Caveat", cursive;
+  color: #222c3e;
 }
 
 html {
-  background-color: #fff8b8;
+  background-color: #f1dbcf;
 }

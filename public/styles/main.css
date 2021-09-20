@@ -1,6 +1,7 @@
 .container {
   max-width: 960px;
   margin: 0 auto;
+  font-family: "Caveat", cursive;
 }
 
 .joke-container {
@@ -21,11 +22,11 @@
 }
 
 .heading {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .joke {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 h1,
@@ -43,6 +44,7 @@ button {
   font-size: 17px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  font-family: "Caveat", cursive;
 }
 
 html {
